@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strings</title>
+	<script>
+		function alpha(e) {
+     var k;
+     k = e.keyCode;
+     return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8);
+   }
+	</script>
+</head>
+<body>
+	<label>Type in text with letters only here:<input id="inputText" type="text" onkeypress="return alpha(event)" /></label>
+	<button id="btn">manipulate string</button>
+	<div id="display">
+		
+	</div>
+	<script type="text/javascript" src="strings.js"></script>
+</body>
+</html>
